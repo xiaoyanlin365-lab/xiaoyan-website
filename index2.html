@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>林晓燕 - 个人主页</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap">
+  <style>
+    :root {
+      --primary-orange: #bd5b39;
+      --bg-color: #f5f2ed;    /* 模仿图中那种米白底色 */
+      --card-bg: #fff5f0;    /* 重点卡片的淡橙底色 */
+      --text-main: #2d3436;
+      --text-light: #636e72;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', -apple-system, sans-serif;
+      background-color: var(--bg-color); /* 全局底色 */
+      color: var(--text-main);
+      line-height: 1.8;
+    }
+
+    .container {
+      max-width: 850px;
+      margin: 0 auto;
+      padding: 80px 40px;
+    }
+
+    /* 顶部导航模拟 */
+    .top-nav {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      color: var(--text-light);
+      margin-bottom: 60px;
+    }
+
+    /* 姓名区 */
+    h1 {
+      font-size: 64px;
+      font-weight: 800;
+      margin: 0;
+      color: #1a1a1a;
+      letter-spacing: -2px;
+    }
+
+    .chinese-name {
+      font-weight: 400;
+      color: #888;
+      font-size: 40px;
+    }
+
+    .slogan {
+      font-size: 22px;
+      margin: 20px 0;
+      font-weight: 500;
+    }
+
+    /* 重点强调卡片 (最近在想) */
+    .thought-card {
+      background-color: var(--card-bg);
+      border-left: 4px solid var(--primary-orange);
+      padding: 25px 35px;
+      margin: 40px 0;
+    }
+
+    .thought-card span {
+      display: block;
+      color: var(--primary-orange);
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .thought-card p {
+      font-size: 20px;
+      font-style: italic;
+      margin: 0;
+      font-weight: 600;
+    }
+
+    /* 标签组 */
+    .tag {
+      display: inline-block;
+      padding: 5px 18px;
+      border: 1px solid #d1d1d1;
+      border-radius: 25px;
+      font-size: 14px;
+      color: var(--text-light);
+      margin-right: 10px;
+      background: white;
+    }
+
+    /* 动作按钮 */
+    .btn-group { margin: 40px 0; }
+    .btn-main {
+      background: var(--primary-orange);
+      color: white;
+      padding: 14px 30px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      margin-right: 15px;
+    }
+    .btn-sub {
+      background: white;
+      border: 1px solid #ddd;
+      padding: 14px 30px;
+      border-radius: 8px;
+      text-decoration: none;
+      color: var(--text-main);
+    }
+
+    /* 履历图标区 */
+    .bio-icons {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+      font-size: 15px;
+    }
+
+    /* 下方详情区 */
+    .about-section {
+      margin-top: 80px;
+      border-top: 1px dashed #ccc;
+      padding-top: 40px;
+    }
+
+    .about-section h3 {
+      font-size: 14px;
+      color: #999;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+  <div class="top-nav">
+    <div>上海 · 风险管理专家 · 团队长</div>
+    <div style="display: flex; gap: 20px;">
+      <span>文章</span><span>项目</span><span>关于</span>
+    </div>
+  </div>
+
+  <h1>Xiaoyan Lin <span class="chinese-name">/ 林晓燕</span></h1>
+  <p class="slogan">用系统思维看透风险；用财报逻辑看懂商业。</p>
+
+  <div class="thought-card">
+    <span>最近在想</span>
+    <p>"七年，就是一辈子。人生的系统性转型比单纯的努力更重要。"</p>
+    <a href="#" style="color: var(--primary-orange); font-size: 14px; text-decoration: none; display: block; margin-top: 10px;">了解我的转型故事 →</a>
+  </div>
+
+  <div>
+    <span class="tag">系统思维</span>
+    <span class="tag">财报分析</span>
+    <span class="tag">风险管理</span>
+    <span class="tag">团队孵化</span>
+  </div>
+
+  <div class="btn-group">
+    <a href="#" class="btn-main">看看我在做什么</a>
+    <a href="#" class="btn-sub">联系我</a>
+  </div>
+
+  <div class="bio-icons">
+    <div>🛡️ 资深保险经纪人</div>
+    <div>📊 商业财报分析讲师</div>
+    <div>🏘️ 10年央企工程师背景</div>
+    <div>👥 AIA 团队管理者</div>
+  </div>
+
+  <div class="about-section">
+    <h3>About Me</h3>
+    <p>我曾是一名央企工程师，在稳定的路径中工作了近 10 年。一段家庭经历，让我开始重新思考人生与风险。</p>
+    <p>后来，我离开体制，从零开始。这条路，到今天已经走了 7 年。我专注的不只是保险产品，而是把复杂的家庭风险变成可量化的系统，让更多人清晰决策。</p>
+  </div>
+</div>
+
+</body>
+</html>
