@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>林晓燕 - 个人主页</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap">
+
+  <style>
+    :root {
+      --primary-orange: #bd5b39; /* 模仿图中的深橙色 */
+      --bg-orange: #fff5f0;    /* 极淡的橙色背景 */
+      --text-main: #2d3436;    /* 深灰，比纯黑高级 */
+      --text-light: #636e72;  /* 辅助文字颜色 */
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #fdfdfd;
+      color: var(--text-main);
+      line-height: 1.7;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 100px 40px;
+    }
+
+    /* 顶部标题区 */
+    header {
+      margin-bottom: 50px;
+    }
+
+    h1 {
+      font-size: 52px;
+      font-weight: 800;
+      margin: 0;
+      letter-spacing: -1px;
+    }
+
+    .subtitle {
+      font-size: 20px;
+      color: var(--text-light);
+      margin-top: 10px;
+    }
+
+    /* 橙色高亮卡片 */
+    .highlight-card {
+      background-color: var(--bg-orange);
+      border-left: 5px solid var(--primary-orange);
+      padding: 30px;
+      margin: 40px 0;
+      border-radius: 4px;
+    }
+
+    .highlight-card p {
+      font-size: 22px;
+      font-weight: 600;
+      margin: 0;
+      color: #111;
+    }
+
+    /* 标签样式 */
+    .tag-container {
+      margin: 20px 0;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 4px 14px;
+      border: 1px solid #ddd;
+      border-radius: 20px;
+      font-size: 14px;
+      color: var(--text-light);
+      margin-right: 8px;
+    }
+
+    /* 正文标题 */
+    h2 {
+      font-size: 16px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--text-light);
+      margin-top: 80px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 10px;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    /* 按钮样式 */
+    .btn {
+      display: inline-block;
+      background: var(--primary-orange);
+      color: white;
+      padding: 12px 28px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      margin-top: 20px;
+      transition: opacity 0.2s;
+    }
+
+    .btn:hover {
+      opacity: 0.9;
+    }
+
+    footer {
+      margin-top: 100px;
+      padding-top: 40px;
+      border-top: 1px dashed #eee;
+      font-size: 14px;
+      color: #bbb;
+    }
+
+    /* 手机端适配 */
+    @media (max-width: 600px) {
+      h1 { font-size: 36px; }
+      .container { padding: 40px 20px; }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+  <header>
+    <div style="font-size: 14px; color: var(--text-light); margin-bottom: 20px;">上海 · 风险管理 · 财报分析</div>
+    <h1>林晓燕 / Lin Xiaoyan</h1>
+    <div class="subtitle">用系统思维，应对不确定的人生。</div>
+    
+    <div class="tag-container">
+      <span class="tag">保险经纪人</span>
+      <span class="tag">财报讲师</span>
+      <span class="tag">系统思考者</span>
+    </div>
+  </header>
+
+  <div class="highlight-card">
+    <p>“七年，就是一辈子。”</p>
+    <div style="font-size: 14px; color: var(--primary-orange); margin-top: 10px;">阅读更多关于我的转变 →</div>
+  </div>
+
+  <a href="mailto:lin466031@wechat.com" class="btn">联系我</a>
+
+  <h2>关于我 / About</h2>
+  <p>我曾是一名央企工程师，在稳定的路径中工作了近10年。一段家庭经历，让我开始重新思考人生与风险。</p>
+  <p>后来，我离开体制，从零开始。这条路，到今天已经走了 7 年。</p>
+
+  <h2>专业领域 / Focus</h2>
+  <p><strong>📊 商业财报：</strong> 帮助你看懂公司与商业本质。</p>
+  <p><strong>🛡️ 风险对冲：</strong> 用保险体系应对人生不可控的重大风险。</p>
+  <p><strong>🧠 决策模型：</strong> 在复杂世界中，建立清晰的决策系统。</p>
+
+  <h2>核心理念 / Philosophy</h2>
+  <p>真正的稳定，不是没有风险，而是具备应对风险的能力。生活不是自然发生的，而是被设计出来的。</p>
+
+  <footer>
+    微信：lin466031 <br>
+    © 2026 林晓燕 · 基于系统思维的设计
+  </footer>
+</div>
+
+</body>
+</html>
